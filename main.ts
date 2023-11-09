@@ -1,4 +1,4 @@
-import blog from "https://deno.land/x/blog/blog.tsx";
+import blog, { ga } from "https://deno.land/x/blog/blog.tsx";
 
 blog({
   author: "syamaguc",
@@ -13,8 +13,6 @@ blog({
   lang: "ja",
   dateFormat: (date) =>
     new Intl.DateTimeFormat("en-GB", { dateStyle: "long" }).format(date),
-  middlewares: [
-    //ga("UA-XXXXXXXX-X"),
-  ],
+  middlewares: [ga("G-TV5MK3SE7E")],
   favicon: "favicon.ico",
 });
