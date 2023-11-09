@@ -1,4 +1,7 @@
 import blog, { ga } from "https://deno.land/x/blog/blog.tsx";
+// prismjs
+import "https://esm.sh/prismjs@1.27.0/components/prism-typescript?no-check";
+import "https://esm.sh/prismjs@1.27.0/components/prism-python?no-check";
 
 blog({
   author: "syamaguc",
